@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Datang</title>
+    <title>Halaman Buku</title>
     <style>
         body {
             background-image: url('https://images.hdqwalls.com/download/anime-scenery-field-4k-9j-2560x1440.jpg');
@@ -91,12 +91,13 @@
 <body>
     <h1>Selamat Datang di toko BookSales!</h1>
     <p>ini adalah halaman buku dari toko buku</p>
-    @foreach($books as $item)
+    @foreach($books as $book)
         <ul>
-            <li>{{$item['title']}}</li>
-            <li>{{$item['description']}}</li>
-            <li>{{$item['price']}}</li>
-            <li>{{$item['stock']}}</li>
+            <li>{{$book['title']}}</li>
+            <li>{{$book['description']}}</li>
+            <li>{{$book['price']}}</li>
+            <li>{{$book['stock']}}</li>
+            <li>{{$book['cover_photo']}}</li>
         </ul>
     @endforeach
 </body>

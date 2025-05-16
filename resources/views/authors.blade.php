@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Halaman Autor</title>
+    <title>Halaman Author</title>
     <style>
         body {
             background-image: url('https://images.hdqwalls.com/download/anime-scenery-field-4k-9j-2560x1440.jpg');
@@ -91,12 +91,12 @@
 <body>
     <h1>Selamat Datang di toko BookSales!</h1>
     <p>ini adalah halaman penulis dari toko buku</p>  
-    @foreach ($authors as $item)
+    @foreach ($authors as $author)
         <ul>
-            <li>{{$item['id']}}</li>
-            <li>{{$item['name']}}</li>
-            <li>{{$item['photo']}}</li>
-            <li>{{$item['bio']}}</li>
+            <li>{{$author['id']}}</li>
+            <li>{{$author['name']}}</li>
+            <li>{{$author['photo']}}</li>
+            <li>{{$author['bio']}}</li>
         </ul>
     @endforeach
 </body>

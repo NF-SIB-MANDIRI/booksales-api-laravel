@@ -118,7 +118,7 @@ class AuthorController extends Controller
                 Storage::disk('public')->delete('authors/'.$author->photo);
             }
 
-            $data['cover_photo'] = $image->hashName();
+            $data['photo'] = $image->hashName();
         }
             
 
